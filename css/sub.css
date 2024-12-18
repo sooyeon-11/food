@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* sub_visual */
+.sub_visual {  background: url("../images/sub/bg_sub1.jpg") no-repeat center center /cover;}
+
+.sub_visual .sub_txt { padding: 300px 0 200px; text-align: center; color: #fff; }
+.sub_visual h2{font-size: 8rem; font-family: var(--sub-font); font-weight: 400;}
+.sub_visual p { position: relative; font-size: 2rem; padding-top: 50px;}
+.sub_visual p::before{ position: absolute ; left: 50%; top: 0; content: ""; height: 30px; width: 1px; background: #fff;}
+
+/* story */
+.story {padding-bottom: 200px; border-bottom: 1px solid #ddd;}
+h3 { padding: 100px 0; font-size: 4rem; text-align: center;}
+
+.story .inner { max-width: 1440px;}
+
+.story .inner > div { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
+.story .con_img { width: 40%;}
+.story .con_img img { display: block; width: 100%;}
+.story .con_txt { width: 50%;}
+
+.story .con_txt span { position: relative; display: inline-block; font-family: var(--sub-font); color: var(--main-color); font-size: 6rem; font-weight: 700;}
+.story .con_txt span::before {content: ""; height: 20px; width: calc(100% + 20px); background: rgba(194, 112, 52, 0.2); position: absolute; left: -5px; bottom: 10px; transform: skewX(-10deg);}
+
+.story .con_txt h4{font-family: var(--sub-font); font-size: 4rem; font-weight: 500; padding: 50px 0 30px;}
+.story .con_txt p{ font-size: 1.8rem; color: #666; padding-bottom: 10px;}
